@@ -16,6 +16,8 @@ public class Character : MonoBehaviour {
     private string PlayerRightY;
     private string PlayerRightTrigger;
     private string PlayerLeftTrigger;
+    private string PlayerRightBumper;
+    private string PlayerLeftBumper;
     private bool FacingRight;
     public void Setvariables() {
         PlayerHorizontal = Player+"Horizontal";
@@ -30,7 +32,9 @@ public class Character : MonoBehaviour {
         PlayerRightY = Player + "RightY";
         PlayerRightTrigger = Player + "RightTrigger";
         PlayerLeftTrigger = Player + "LeftTrigger";
-    }
+        PlayerRightBumper = Player + "RightBumper";
+        PlayerLeftBumper = Player + "LeftBumper";
+}
 
     public bool GetFacingRight()
     {
@@ -91,5 +95,13 @@ public class Character : MonoBehaviour {
     public string GetLeftTrigger()
     {
         return PlayerLeftTrigger;
+    }
+    public string GetRightBumper()
+    {
+        return PlayerRightBumper;
+    }
+    public string GetLeftBumper()
+    {
+        return PlayerLeftBumper;
     }
 }

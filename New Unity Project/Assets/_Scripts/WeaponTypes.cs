@@ -6,13 +6,28 @@ public class WeaponTypes : MonoBehaviour {
     int WeaponSlot1;
     int WeaponSlot2;
     int WeaponInUse;
+    string LeftBumper;
+    string RightBumper;
+    Component Character;
+    
 	// Use this for initialization
 	void Start () {
-	
+
+        this.GetComponent<Character>().GetLeftBumper();
+        this.GetComponent<Character>().GetRightBumper();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(Input.GetButtonDown(this.GetComponent<Character>().GetLeftBumper()))
+        {
+            Debug.Log("LeftBumper");
+        }
+        if(Input.GetButtonDown(this.GetComponent<Character>().GetRightBumper()))
+        {
+            Debug.Log("RightBumper");
+        }
         switch (currentWeapon)
         {
             case 1:
@@ -29,9 +44,14 @@ public class WeaponTypes : MonoBehaviour {
                 WeaponInUse = 0;
                 break;
         }
-	}
-public int GetWeapon()
-{
-    return WeaponInUse;
+    }
+
+
+        public int GetWeapon()
+        {
+             return WeaponInUse;
+        }
 }
-}
+
+
+
