@@ -4,7 +4,6 @@ public class Move : MonoBehaviour {
     public float speed = 5F;
     void Start()
     {
-        AudioSource SkitterRef = GetComponent<AudioSource>();
         this.GetComponent<Character>().Setvariables();
         
     }

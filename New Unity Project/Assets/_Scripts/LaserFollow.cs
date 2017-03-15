@@ -2,10 +2,10 @@
 using System.Collections;
 
 public class LaserFollow : MonoBehaviour {
-    public GameObject LegsRef;
+    GameObject LegsRef;
 	// Use this for initialization
 	void Start () {
-        LegsRef = GameObject.Find("Legs");
+        LegsRef = GameObject.Find("Prefab_Platform");
     }
 	
 	// Update is called once per frame

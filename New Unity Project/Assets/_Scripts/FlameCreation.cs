@@ -75,7 +75,7 @@ public class FlameCreation : MonoBehaviour {
                 left = false;
                 right = false;
             }
-        Debug.Log(down);
+
         }
     
 }

@@ -18,7 +18,6 @@ public class Character : MonoBehaviour {
     private string PlayerLeftTrigger;
     private string PlayerRightBumper;
     private string PlayerLeftBumper;
-    private bool FacingRight;
     public void Setvariables() {
         PlayerHorizontal = Player+"Horizontal";
         PlayerVertical = Player + "Vertical";
@@ -35,19 +34,6 @@ public class Character : MonoBehaviour {
         PlayerRightBumper = Player + "RightBumper";
         PlayerLeftBumper = Player + "LeftBumper";
 }
-
-    public bool GetFacingRight()
-    {
-        return FacingRight;
-    }
-
-    /*public void SetFacingRight(string PlayerHorizontal)
-    {
-        if (Input.GetAxis(PlayerHorizontal) > 0)
-            FacingRight = true;
-        if (Input.GetAxis(PlayerHorizontal) < 0)
-            FacingRight = false;
-    }*/
     public string GetHorizontal()
     {
         return PlayerHorizontal;

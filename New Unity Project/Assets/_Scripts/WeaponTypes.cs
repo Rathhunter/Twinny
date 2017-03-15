@@ -12,21 +12,24 @@ public class WeaponTypes : MonoBehaviour {
     
 	// Use this for initialization
 	void Start () {
-
-        this.GetComponent<Character>().GetLeftBumper();
-        this.GetComponent<Character>().GetRightBumper();
-	}
+        WeaponSlot1 = 1;
+        WeaponSlot2 = 2;
+    }
 
     // Update is called once per frame
     void Update()
     {
         if(Input.GetButtonDown(this.GetComponent<Character>().GetLeftBumper()))
         {
-            Debug.Log("LeftBumper");
+            currentWeapon -= 1;
+            if (currentWeapon < 0)
+                currentWeapon = 2;
         }
         if(Input.GetButtonDown(this.GetComponent<Character>().GetRightBumper()))
         {
-            Debug.Log("RightBumper");
+            currentWeapon += 1;
+            if (currentWeapon > 2)
+                currentWeapon = 0;
         }
         switch (currentWeapon)
         {

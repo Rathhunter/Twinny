@@ -3,10 +3,11 @@ using System.Collections;
 
 public class WeaponNumber : MonoBehaviour {
     public int Weapon;
-    public GameObject LegsRef;
+    GameObject LegsRef;
 	// Use this for initialization
 	void Start () {
-	}
+        LegsRef = GameObject.Find("Prefab_Platform");
+    }
 	
 	// Update is called once per frame
 	void Update () {

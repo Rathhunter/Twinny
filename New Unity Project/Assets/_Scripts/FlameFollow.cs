@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class FlameFollow : MonoBehaviour {
-    public GameObject LegsRef;
+    GameObject LegsRef;
     bool left;
     bool right;
     bool up;
@@ -16,7 +16,7 @@ public class FlameFollow : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        LegsRef = GameObject.Find("Legs");
+        LegsRef = GameObject.Find("Prefab_Platform");
         right = LegsRef.GetComponent<FlameCreation>().GetRight();
         left = LegsRef.GetComponent<FlameCreation>().GetLeft();
         up = LegsRef.GetComponent<FlameCreation>().GetUp();
