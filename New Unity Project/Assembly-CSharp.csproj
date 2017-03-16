@@ -59,6 +59,7 @@
      <Compile Include="Assets\_Scripts\LaserRotate.cs" />
      <Compile Include="Assets\_Scripts\Move.cs" />
      <Compile Include="Assets\_Scripts\Shoot.cs" />
+     <Compile Include="Assets\_Scripts\ShrinkOverTime.cs" />
      <Compile Include="Assets\_Scripts\VacuumFollow.cs" />
      <Compile Include="Assets\_Scripts\WeaponNumber.cs" />
      <Compile Include="Assets\_Scripts\WeaponTypes.cs" />
