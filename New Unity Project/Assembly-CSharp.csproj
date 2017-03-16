@@ -53,11 +53,13 @@
      <Compile Include="Assets\_Scripts\FireRate.cs" />
      <Compile Include="Assets\_Scripts\FlameCreation.cs" />
      <Compile Include="Assets\_Scripts\FlameFollow.cs" />
+     <Compile Include="Assets\_Scripts\GunSwitch.cs" />
      <Compile Include="Assets\_Scripts\KillSelf.cs" />
      <Compile Include="Assets\_Scripts\LaserFollow.cs" />
      <Compile Include="Assets\_Scripts\LaserRotate.cs" />
      <Compile Include="Assets\_Scripts\Move.cs" />
      <Compile Include="Assets\_Scripts\Shoot.cs" />
+     <Compile Include="Assets\_Scripts\VacuumFollow.cs" />
      <Compile Include="Assets\_Scripts\WeaponNumber.cs" />
      <Compile Include="Assets\_Scripts\WeaponTypes.cs" />
  <Reference Include="UnityEngine.UI">

@@ -17,13 +17,25 @@ public class GunSwitch : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (LegsRef.GetComponent<WeaponTypes>().GetWeapon() != 0)
+        {
+            VacuumRef.transform.position = new Vector3(0, 0, -11);
             VacuumRef.gameObject.SetActive(false);
+            
+        }
         else VacuumRef.gameObject.SetActive(true);
         if (LegsRef.GetComponent<WeaponTypes>().GetWeapon() != 1)
+        {
+            LaserRef.transform.position = new Vector3(0, 0, -11);
             LaserRef.gameObject.SetActive(false);
+            
+        }
         else LaserRef.gameObject.SetActive(true);
         if (LegsRef.GetComponent<WeaponTypes>().GetWeapon() != 2)
+        {
+            ShottyRef.transform.position = new Vector3(0, 0, -11);
             ShottyRef.gameObject.SetActive(false);
+            
+        }
         else ShottyRef.gameObject.SetActive(true);
     }
 }

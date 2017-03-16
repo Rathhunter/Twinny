@@ -8,6 +8,7 @@ public class Shoot : MonoBehaviour {
     float reload;
     bool TractorUse;
     int WeaponUsed;
+    GameObject VacuumRef;
     public float firerate;
 	// Use this for initialization
 	void Start () {
@@ -42,7 +43,7 @@ public class Shoot : MonoBehaviour {
             if (WeaponUsed == 0 && TractorUse == false)
             {
                 TractorUse = true;
-                Debug.Log(TractorUse);
+                VacuumRef = (GameObject)Instantiate(BulletRef, new Vector3(FirePoint.transform.position.x, FirePoint.transform.position.y, 0), this.transform.rotation);
             }
         }
         if (Input.GetAxis(LegsRef.GetComponent<Character>().GetRightTrigger()) == 0)
@@ -50,7 +51,7 @@ public class Shoot : MonoBehaviour {
             if (WeaponUsed == 0 && TractorUse == true)
             {
                 TractorUse = false;
-                Debug.Log(TractorUse);
+                DestroyImmediate(VacuumRef);
             }
         }
     }
