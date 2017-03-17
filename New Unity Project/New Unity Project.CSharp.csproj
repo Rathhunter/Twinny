@@ -67,6 +67,7 @@
     <Compile Include="Assets\_Scripts\CameraFollow.cs" />
     <Compile Include="Assets\_Scripts\Character.cs" />
     <Compile Include="Assets\_Scripts\CollideKill.cs" />
+    <Compile Include="Assets\_Scripts\EnemyAttack.cs" />
     <Compile Include="Assets\_Scripts\Enemyfollow.cs" />
     <Compile Include="Assets\_Scripts\FireRate.cs" />
     <Compile Include="Assets\_Scripts\FlameCreation.cs" />
@@ -77,6 +78,8 @@
     <Compile Include="Assets\_Scripts\LaserRotate.cs" />
     <Compile Include="Assets\_Scripts\Move.cs" />
     <Compile Include="Assets\_Scripts\Shoot.cs" />
+    <Compile Include="Assets\_Scripts\ShrinkOverTime.cs" />
+    <Compile Include="Assets\_Scripts\VacuumFollow.cs" />
     <Compile Include="Assets\_Scripts\WeaponNumber.cs" />
     <Compile Include="Assets\_Scripts\WeaponTypes.cs" />
   </ItemGroup>
